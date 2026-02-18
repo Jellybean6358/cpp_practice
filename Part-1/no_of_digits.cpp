@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int x,c=0;
+    cin>>x;
+    while(x!=0){
+        x/=10;
+        c++;
+    }
+    cout<<c<<endl;
+}

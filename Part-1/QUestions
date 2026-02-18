@@ -1,0 +1,81 @@
+Find number of digits in any Number. //Exercise to be completed before review.
+Write program for below conversion.
+i. Convert Binary to Decimal, Decimal to binary.
+ii. Convert Binary to Octal, Octal to Binary.
+iii. Convert Decimal to Octal, Octal to Decimal
+i. Count the occurrences of character in a character-array.
+ii. Find the length of the character array.
+Write a program to Compare two character-array.
+Write a program to Print Reverse character-array.
+Write a program to Concatenate two character-array.
+Write a Copy character-array to another character-array.
+Find Number of vowels, consonants, digits, spaces in character-array.
+Remove special-characters in the character-array except Alphabets.
+Convert Uppercase to Lowercase, Lowercase to Uppercase.
+Write a Program to check whether the given number is Armstrong number or not.
+Write a program to print the range of prime numbers.
+Sample Input:
+    input: 1 100   // 1 is a starting value and 100 is an ending value
+    output: 1 3 5 7 11 13 …… 97   print the primenumber until 100.
+Write a program to find maximum occurring character in character array
+Case 1:
+Input: how are you
+Output: o // o is a character occurred 2times in the string
+Case 2:
+Input:  Programming
+Output: r //here r occurs 2times, g occurs 2times, m occurs 2times. Print first occur character.
+Write a program to find the frequency of characters in a string.
+Sample input1: I am working at HCL
+Input 2: L
+Output: 1 //L present only once string.
+ 
+ Write a program to sort the characters based on their count.
+Case 1:
+Input: Ahmedabad(Frequency : a-3,b-1,d-2,e-1,h-1,m-1)
+Output: Aaabddeehm
+ 
+Case 2:
+Input: hello (l-2, o-1, e-1, h-1)
+Output: lleho
+Write a program to count the no of words in a string.
+Sample Case 1:
+ Input:  I am fine
+Output: 3
+ Write a program to calculate the permutations. Get the value of N and R from the user as input.
+nPr = n!/ (n-r)! =n(n-1) (n-2) (n-3) ..... (n-r+1)  
+ Write a program to print all the permutations of a string with all duplicates.
+ Write a program for printing the below pattern
+         1 
+      2 3 
+    3 4 5 
+      4 5 6 7 
+        5 6 7 8 9 
+Write a program using a logical bitwise operator
+Input: 3 5
+3 => 0000 0011
+5 => 0000 0100
+Output : 
+//And operation output
+7  //Or operation output
+6  //Not operation output
+ Write a Program for calculate the area and circumference of circle. Use PI as Macro.
+Write a Program for Mathematical functions of Addition, Subtraction, Multiplication and Division in one file named as (mathematical.cpp) and try to include the cpp file in another file named (problem.cpp) Which consists of Main functions. Call the Mathematical functions in Main Functions using Switch case.
+ Write a program for square root of number using Function Like Macros.
+Datatypes: -
+1.     a.  Write a program to print size of the primitive and user defined datatypes. Make tabular with columns (datatypes, size, range).  
+b. Try to understand the difference between float and double. How it is getting stored and compare both the size. 
+c. Try to understand how we store the negative values. 
+2. Write a program to calculate the simple interest. Get the P, N and R as floating value and print the simple interest with 2floating values. 
+For eg:  
+Input:  P= 15500, R = 12.5 and N=2.5 
+Output:  4843.75 
+3. Write a program to Declare the variable and print the value. 
+               a. without assigning any values to variable. Try to understand the value what is stored in the variable. 
+               b. Try to assign the value using both the assignment operator and constructor initialization. 
+               c. Create a variable as Constants try to modify the value. Describe your answer whether its modified or not? 
+4.  Write a program for number of digits using pre increment and post increment. 
+For e.g.: 56789001 
+ Output: 8 
+5. a. Write a program for storing the floating value in integer variable.  
+    b. Write a program to print the ascii values of the character. 
+6.  Write a program for basic arithmetic functions like add, sub, multiply, divide using switch statement. 

@@ -1,3 +1,5 @@
+PART- 1
+
 Find number of digits in any Number. //Exercise to be completed before review.
 Write program for below conversion.
 i. Convert Binary to Decimal, Decimal to binary.
@@ -61,7 +63,8 @@ Output :
  Write a Program for calculate the area and circumference of circle. Use PI as Macro.
 Write a Program for Mathematical functions of Addition, Subtraction, Multiplication and Division in one file named as (mathematical.cpp) and try to include the cpp file in another file named (problem.cpp) Which consists of Main functions. Call the Mathematical functions in Main Functions using Switch case.
  Write a program for square root of number using Function Like Macros.
-Datatypes: -
+
+PART -2- Datatypes: -
 1.     a.  Write a program to print size of the primitive and user defined datatypes. Make tabular with columns (datatypes, size, range).  
 b. Try to understand the difference between float and double. How it is getting stored and compare both the size. 
 c. Try to understand how we store the negative values. 
@@ -79,3 +82,82 @@ For e.g.: 56789001
 5. a. Write a program for storing the floating value in integer variable.  
     b. Write a program to print the ascii values of the character. 
 6.  Write a program for basic arithmetic functions like add, sub, multiply, divide using switch statement. 
+
+PART -3- Looping, Datatypes and Conditional Statements:
+ 
+1. Write a function that takes one input as range. Display the cube of all numbers in specified range.
+For eg:
+Case 1:
+Sample input:
+n=5
+output:
+1     //cube of 1 is = 1
+8     //cube of 2 is = 8
+27    //cube of 3 is = 27
+64    //cube of 4 is = 64
+125   //cube of 5 is = 125
+ 
+2. Write a program to enter the numbers till the user wants and at the end it should display the sum of odd and even digits.
+ 
+Case 1:
+Sample input:
+Do you want enter the input: y
+10
+Do you want enter the input: y
+15
+Do you want enter the input: y
+3
+Do you want enter the input: n
+Sum of odd digits:  18
+Sum of evendigits: 10
+ 
+3. Write a program for student database like Studentname, rollno, marks using structure.
+   a. Write a function for setdetails and getdetails.
+   b. Create a Object and store the values of single student details into object using setdetails function.
+   c. Display the details of the students using getdetails function.
+ 
+4. Write a program to stop the infinite loop.
+ 
+5. Using Enum, Write a program to print the month based on the user input. If user enter 1 January name should print, user enter 3 March should print.
+ 
+6. Write a program find the number and sum of all integer for specified range which are divisible by 9
+Sample input:
+100   //100 is starting value
+200   //200 is ending value
+Output:
+Number divisible by 9 are:
+108 117 126 135 144 153 162 171 180 189 198
+Sum of digits : 1683
+ 
+PART -4- Operator’s Questions: -
+ 
+ 
+1. Write a program for vaidate whether the person is eligible for voting or not.
+Conditions:
+a. personage is less than 18, print the person'sname is not eligible for voting
+b. personage is greater than 18, print the person's name is eligible for voting
+ 
+sample input:
+Enter the person name: devasena
+enter the age: 15
+output:
+Devasena is not eligible for voting
+ 
+2. Write a program to input electricity unit charge and calculate the total electricity bill according to the given condition:
+For first 50 units Rs. 0.50/unit
+For next 100 units Rs. 0.75/unit
+For next 100 units Rs. 1.20/unit
+For unit above 250 Rs. 1.50/unit
+An additional surcharge of 20% is added to the bill.
+ 
+3. Write a program for satisifying the following conditions:-
+   a. if a number is divisible by 3 and a number is divisible by 5. Print the output as number is divisible by both 3 and 5.
+   b. if a number is divisible by 3 and not even number. Print the number as divisible by 3 but not even number.
+   c. if a number is not divisible by 3 or not divisible by 5 print the number is not divisible by 3 or 5.
+ 
+4. Write a program for find whether the character is vowel or not using Not operator.
+ 
+5. Write a program for find the maximum of two number using Conditional Operator.
+ 
+6. Create a class for student with following attributes like student name, student regno and mark. Declare the functions getdetails and setdetails inside the class. Try to define the function outside the student class.Create a object for the student and
+try to access the functions. 

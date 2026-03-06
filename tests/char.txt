@@ -1,0 +1,13 @@
+​3. Character and Boolean Types (char, bool)
+​Easy
+​Store the character 'A' in a variable. Print its integer (ASCII) value.
+​What is the size of a bool in bytes? Why isn't it 1 bit?
+​Convert a lowercase char to uppercase using arithmetic (e.g., ch - 32).
+​What is the numerical value of true and false when cast to an int?
+​Can you store the number 65 in a char variable? What happens when you print it?
+​Intermediate
+​Escape Sequences: Write a program that prints a tab, a newline, and a backslash using char literals.
+​What is wchar_t? How does it differ from a standard char?
+​Explain "Boolean Short-circuiting" in an if statement involving multiple conditions.
+​Use a char to iterate through the alphabet (A-Z) in a for loop.
+​What is the difference between 'A' (single quotes) and "A" (double quotes)?

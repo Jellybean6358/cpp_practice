@@ -1,0 +1,18 @@
+Integer Types (int, short, long, long long)
+​Easy
+​Declare an integer and a long long. What is the typical size difference in bytes on a 64-bit system?
+​Write a program to find the maximum and minimum values an int can hold using <climits>.
+​What happens if you assign a value of 2.9 to an int variable?
+​Initialize an integer using four different methods (copy, direct, list, and value initialization).
+​Declare an unsigned int. What is the result of assigning -1 to it?
+​Intermediate
+​Overflow Challenge: If int x = INT_MAX;, what is the value of x + 1? Explain the behavior.
+​Write a snippet to swap two integers without using a third temporary variable.
+​Compare sizeof(long) and sizeof(long long) on your compiler. Are they always different?
+​Demonstrate the use of std::int32_t and std::int64_t from <cstdint>. Why are these preferred in embedded systems?
+​Given short a = 32767;, what does a = a + 1; result in?
+
+to learn:pending
+1)operator and op-precedence
+2)Associative
+3)Operators.

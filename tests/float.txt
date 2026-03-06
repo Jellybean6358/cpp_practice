@@ -1,0 +1,15 @@
+​2. Floating-Point Types (float, double, long double)
+​Easy
+​Declare a float and a double. Which one provides more precision?
+​Why does 0.1 + 0.2 == 0.3 often evaluate to false in C++?
+​Use std::setprecision from <iomanip> to print a double to 10 decimal places.
+​What is the suffix used to denote a float literal (e.g., 3.14_)?
+​Calculate the area of a circle where the radius is an int, but the result is a double.
+​Intermediate
+​Precision Loss: Subtract a very small double from a very large double. What happens?
+​Write a program to check if a floating-point number is "close enough" to another using an epsilon (\epsilon) value.
+​What are inf and nan? Write code that produces both.
+​Compare the memory footprint of an array of 1,000 floats vs. 1,000 doubles.
+​Explain the difference between float x = 3.5; and float x = 3.5f;.
+
+

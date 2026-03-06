@@ -1,0 +1,13 @@
+​5. Memory, Modifiers, and Constants
+​Easy
+​Use sizeof to create a table of all primitive types and their sizes on your machine.
+​Declare a const variable. Try to change its value and explain the error.
+​What does the signed keyword do when applied to a char?
+​Define a constant using constexpr. How does it differ from const?
+​Declare a variable without initializing it. Print it. What is "garbage value"?
+​Hard/Advanced
+​Memory Alignment: Why might a struct containing a char and an int be 8 bytes instead of 5?
+​Bit Manipulation: Use a char as a bitmask to store 8 true/false flags.
+​Binary Representation: Write a function to print the binary representation of an int using bitwise operators.
+​Auto Keyword: Use auto to declare variables and use decltype to verify they are the correct primitive types.
+​Fixed-width Limits: Explain why int8_t might be treated as a char by std::cout and how to fix it.

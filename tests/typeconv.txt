@@ -1,0 +1,13 @@
+​4. Type Casting and Conversions
+​Easy
+​Perform an implicit conversion from char to int.
+​What is "Narrowing Conversion"? Give an example that triggers a compiler warning.
+​Use static_cast<int>() to convert a double to an int.
+​Divide two integers (5/2) but get a result of 2.5 using casting.
+​What happens when you assign a long long value to a short?
+​Intermediate
+​Explain the danger of using C-style casts (int)x versus static_cast<int>(x).
+​Write a program that takes a double, adds 0.5, and casts it to int to perform rounding.
+​Show how an unsigned int and a signed int behave differently in a comparison expression.
+​What is "Integral Promotion"?
+​Use typeid to print the names of different primitive types at runtime.

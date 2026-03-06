@@ -1,0 +1,28 @@
+code format:
+1)variable name should relate to that variable not just x,y,z;
+2)name of the user defined methods/functions should be a process.
+3)use of multiple returns inside a method is not a good coding practice, instead try to use of flag flips.
+4)handle invalid inputs and negative elements.
+5)handling of more users
+6)handling of diff data types
+
+initialization errors:
+1)int=ch}
+  char='10'} both acceptable or not, and why.
+2)how sign managed in int and others.
+
+memory utilisation:
+1)how given input stored in an memory block repective to the data types allocated size/bits.
+
+don't know
+1)int has 4 bytes = 32bits, if value is 10 i.e 1010 which has 4 bits how it occupies in that 32 bit memory block
+2)float how saved in ieee 754 , 3 parts in memory
+3)float 10.0 
+4)float in double, double in float
+5)handling garbage value?
+6)class->default const->uninitialized, int default value, how, why?
+7)uninitialized variable inside the main, what, how, why?
+8)2 int value, +,- how storing, MSB mathematical calculation
+
+
+

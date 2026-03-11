@@ -1,14 +1,11 @@
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-struct Student{
-        int x=10;
-        char ch=65;
-};
 int main(){
-    // Student s1;
-    cout<<"struct size: "<<sizeof(Student)<<endl;
-    cout<<"align of class: "<<alignof(Student)<<endl;
-    cout<<"align of int: "<<alignof(int)<<endl;
-    cout<<"align of char: "<<alignof(char);
+    int value=0;
+    for(int i=0;i<8;++i){
+        value+=pow(2,i);
+    }
+    cout<<value;
+    
 }

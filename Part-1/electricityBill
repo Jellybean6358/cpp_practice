@@ -3,15 +3,26 @@
 
 int calculateElectricityBill(int units) {
     float units, bill, total;
-    if(units <= 50) bill = units * 0.50;
-else if(units <= 150) bill = 25 + (units-50) * 0.75;
-else if(units <= 250) bill = 100 + (units-150) * 1.20;
-else bill = 220 + (units-250) * 1.50;
+    if(units <= 50){
+        bill = units * 0.50;
+    }
+    else if(units <= 150){
+        bill = 25 + (units-50) * 0.75;
+    }
+    else if(units <= 250){
+        bill = 100 + (units-150) * 1.20;
+    }
+    else{
+        bill = 220 + (units-250) * 1.50;
+    }
 
-total = bill + (bill * 0.20);
-return total;
+    total = bill + (bill * 0.20);
+    return total;
 }
 using namespace std;
 int main(){
-    
+    int units;
+    cout<<"Enter no.of units used: ";
+    cin>>units;
+    cout<<"Bill amount for "<<units<<" units is: "<<calculateElectricityBill(units)<<endl;
 }

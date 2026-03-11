@@ -1,8 +1,10 @@
 #include<iostream>
 #include<bits/stdc++.h>
-
 using namespace std;
+void sum(int arr[]){
+    
+}
 int main(){
-    char a=33.5;
-    cout<<a;
+    int arr[4]{1,2,3,4};
+    sum(arr);
 }

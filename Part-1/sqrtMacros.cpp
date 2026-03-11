@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath> // For sqrt()
+#include <cmath> // for sqrt()
 using namespace std;
 
 #define SQUARE_ROOT(x) sqrt(x)

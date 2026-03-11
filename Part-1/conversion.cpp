@@ -36,12 +36,60 @@ int main(){
             break;
         }
         case 3:{
-            
+            //binary to octal
+                int x;
+                cin>>x;
+                vector<int> arr;
+                while(x!=0){
+                    int t=x%10;
+                    arr.push_back(t);
+                    x/=10;
+                }
             break;
         }
-        case 4:{break;}
-        case 5:{break;}
-        case 6:{break;}
+        case 4:{
+            //octal->binary
+            int x;
+            cin>>x;
+            vector<int> arr;
+            while(x!=0){
+                int t=x%10;
+                arr.push_back(t);
+                x/=10;
+            }
+             reverse(arr.begin(),arr.end());
+             for(int x:arr){
+                cout<<x;
+            }
+            break;}
+        case 5:{
+            //decimal to octal
+            int n;
+            cin>>n;
+            vector<int> arr;
+            while(n>0){
+                int t=n%8;
+                arr.push_back(t);
+                n/=8;
+            }
+            reverse(arr.begin(),arr.end());
+            for(int x:arr){
+                cout<<x;
+            }
+            break;}
+        case 6:{
+            //octal to decimal
+            int x;
+            cin>>x;
+            int dec=0,base=1;
+            while(x!=0){
+                int t=x%10;
+                x/=10;
+                dec+=t*base;
+                base*=8;
+            }
+            cout<<dec<<endl;
+            break;}
         default:break;
     }
 }

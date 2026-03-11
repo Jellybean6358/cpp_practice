@@ -3,7 +3,7 @@ using namespace std;
 
 void printCubes(int n) {
     for(int i = 1; i <= n; i++) {
-        cout << i*i*i << " //cube of " << i << " is = " << i*i*i << endl;
+        cout << i*i*i << " cube of " << i << " is = " << i*i*i << endl;
     }
 }
 

@@ -167,3 +167,86 @@ An additional surcharge of 20% is added to the bill.
  
 6. Create a class for student with following attributes like student name, student regno and mark. Declare the functions getdetails and setdetails inside the class. Try to define the function outside the student class.Create a object for the student and
 try to access the functions. 
+
+Please find the questions, 
+
+Class and Objects:
+Write a program to find a factorial of a number using oops.
+Write a program to calculate simple interest using oops.
+Write a program to create a class that represents Complex numbers containing real and imaginary parts and then use it to perform complex number addition, subtraction, multiplication, and division.
+Write a program that performs addition, multiplication, transpose, and determinant value operations on 3 x 3 matrices.
+create Box class with attributes length, width, height, and volume. The class has functions to calculate volume of the box. 
+Write a program to calculate Electricity bill of person using oops. The class has function to create the electricity bill with attributes customer number, name, units (electricity usage) and the bill.
+Creates a time class with attributes of hour, min, sec and create a member function to perform various time arithmetic.
+Write a C++ program to define a class employee having members Emp-id, Emp-nagme, basic salary and functions accept() and display(). Calculate DA=25% of basic salary, HRA=800, I-tax=15% of basic salary. Display the payslip using appropriate output format.
+Define a class to represent a bank account. Include the following members:
+Data members:
+1) Name of the depositor
+2) Account number
+3) Type of account
+4) Balance amount in the account.
+
+Member functions:
+1) To assign initial values
+2) To deposit an amount
+3) To withdraw an amount after checking the balance
+4) To display name and balance.
+ 
+Create a class staff having fields: Staff_id, name, salary with below functions.
+1) To accept the data
+2) To display the data
+3) To sort the data by name
+ 
+Write a class program for finding trailing zeros in a factorial using oops.
+ Create a class named Quadratic that find the roots of a quadratic equation. When the coefficients a, b and c are given.
+Check the memory allocation for Every object of class.
+Create an array of objects for the class and try to access the member functions.
+ Create a class named points with coordinates x and y. Write a function to calculate the distance for two points.
+Create a class for item having fields: itemcode, itemname, itemprice with below functions:
+a). Set all the variables as private variable and accept the values using function Acceptdata();
+b). Try to modify the private variables.
+c). Write a display function.
+
+Copy constructors:
+Create a point class with x and y co-ordinates and user defined copy constructor, create an object and initialize by another object.
+Create box class with length, breadth, height data members. Create a constructor in-order to create an object and initialize the object by using another object of same type.
+In the above class allocate any one of the members dynamically and create a constructor in-order to create an object and initialize the object by using another object of same type.Create a String class with character pointer and size data members. Create a copy constructor for while creating the object and initialize the object by another object
+Create two classes Item and Customer.
+Item class:
+-Item class attributes: ItemNo, ItemName.
+-Item class should have a default constructor, parameterized constructor and Show details functions.
+Customer class:
+-Customer class attributes: CustomerId, CustomerName, Address, pointer attribute of Item type (Item* ItemsInterested) and TotalItems.
+-Customer class should have a default constructor, parameterized constructor, copy constructor and show_details method.
+ 
+Destructor:
+Create a point class with x and y co-ordinates of float type. Create a parameterized constructor with default values, copy constructor and destructor. Create an static object and values of point. Create an object dynamically and print the values.
+ 
+Create two classes Item and Customer.
+Item class:
+-Item class attributes: ItemNo, ItemName.
+-Item class should have a default constructor, parameterized constructor and Show details functions.
+Customer class:
+-Customer class attributes: CustomerId, CustomerName, Address, pointer attribute of Item type (Item* ItemsInterested “Dynamically allocated”) and TotalItems.
+-Customer class should have a default constructor, parameterized constructor, copy constructor and show_details method.
+
+Inheritance:
+Create a Rectangle class with attributes length and breadth. The Rectangle class should have a default and parameterized constructor. Derive a Screen class from Rectangle class. The screen class should have attribute area, default and parameterized constructor. Create an object of screen class print the area of the screen.
+Create a student class having attributes name, address, grade, NameOfSchool. Derive three classes ArtsStudent, ScienceStudent, CommerceStudent from student class. Derived classes should have its own data members marks and subject name.
+The student class should contain parameterized constructor only.
+Create derived objects and print the details.
+ Create two classes named Mammals and MarineAnimals. Create another class named BlueWhale which inherits both the above classes. Now, create a function in each of these classes which prints "I am mammal", "I am a marine animal" and "I belong to both the categories: Mammals as well as Marine Animals" respectively. Now, create an object for each of the above class and try calling
+1 - function of Mammals by the object of Mammal
+2 - function of MarineAnimal by the object of MarineAnimal
+3 - function of BlueWhale by the object of BlueWhale
+4 - function of each of its parent by the object of BlueWhale 
+Make a class named Fruit with a data member to calculate the number of fruits in a basket. Create two other class named Apples and Mangoes to calculate the number of apples and mangoes in the basket. Print the number of fruits of each type and the total number of fruits in the basket. 
+We want to calculate the total marks of each student of a class in Physics,Chemistry and Mathematics and the average marks of the class. The number of students in the class are entered by the user. Create a class named Marks with data members for roll number, name and marks. Create three other classes inheriting the Marks class, namely Physics, Chemistry and Mathematics, which are used to define marks in individual subject of each student. Roll number of each student will be generated automatically. 
+We want to store the information of different vehicles. Create a class named Vehicle with two data member named mileage and price. Create its two subclasses
+*Car with data members to store ownership cost, warranty (by years), seating capacity and fuel type (diesel or petrol).
+*Bike with data members to store the number of cylinders, number of gears, cooling type(air, liquid or oil), wheel type(alloys or spokes) and fuel tank size(in inches)
+Make another two subclasses Audi and Ford of Car, each having a data member to store the model type. Next, make two subclasses Bajaj and TVS, each having a data member to store the make-type.
+Now, store and print the information of an Audi and a Ford car (i.e. model type, ownership cost, warranty, seating capacity, fuel type, mileage and price.) Do the same for a Bajaj and a TVS bike. 
+Create a class named Shape with a function that prints "This is a shape". Create another class named Polygon inheriting the Shape class with the same function that prints "Polygon is a shape". Create two other classes named Rectangle and Triangle having the same function which prints "Rectangle is a polygon" and "Triangle is a polygon" respectively. Again, make another class named Square having the same function which prints "Square is a rectangle".
+Now, try calling the function by the object of each of these classes. 
+All the banks operating in India are controlled by RBI. RBI has set a well-defined guideline (e.g. minimum interest rate, minimum balance allowed, maximum withdrawal limit etc) which all banks must follow. For example, suppose RBI has set minimum interest rate applicable to a saving bank account to be 4% annually; however, banks are free to use 4% interest rate or to set any rates above it. Write a program to implement bank functionality in the above scenario. Note: Create few classes namely Customer, Account, RBI (Base Class) and few derived classes (SBI, ICICI, PNB etc). Assume and implement required member variables and functions in each class. 

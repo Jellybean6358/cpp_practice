@@ -69,3 +69,63 @@ int main() {
     b.print();
     return 0;
 }
+
+
+#include <iostream>
+using namespace std;
+
+class Marks {
+protected:
+    static int rollCounter; // Shared across all instances
+    int rollNumber;
+    char* name;
+public:
+    Marks() {
+        rollNumber = ++rollCounter;
+        name = NULL;
+    }
+    void setBaseInfo(const char* n) {
+        int l = 0; while(n[l]) l++;
+        name = new char[l + 1];
+        for(int i = 0; i <= l; i++) name[i] = n[i];
+    }
+    ~Marks() { delete[] name; }
+};
+
+int Marks::rollCounter = 0; // Initialize static counter
+
+class Physics : virtual public Marks {
+public: int pMarks;
+};
+
+class Chemistry : virtual public Marks {
+public: int cMarks;
+};
+
+class Mathematics : virtual public Marks {
+public: int mMarks;
+};
+
+// Final class to combine all and show details
+class StudentResult : public Physics, public Chemistry, public Mathematics {
+public:
+    void display() {
+        float total = pMarks + cMarks + mMarks;
+        cout << "Roll: " << rollNumber << " | Name: " << name 
+             << " | Total: " << total << " | Avg: " << total/3 << endl;
+    }
+};
+
+int main() {
+    int n;
+    cout << "Enter number of students: "; cin >> n;
+    
+    StudentResult* s = new StudentResult[n];
+    for(int i = 0; i < n; i++) {
+        s[i].setBaseInfo("Student_Name"); // Simplified for demo
+        s[i].pMarks = 80; s[i].cMarks = 85; s[i].mMarks = 90;
+        s[i].display();
+    }
+    delete[] s;
+    return 0;
+}

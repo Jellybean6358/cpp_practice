@@ -105,3 +105,130 @@ Summary of Changes:
  * Manual Copy: Since we can't use strcpy, I implemented while loops to count length and for loops to copy data.
  * Memory Safety: Added destructors (~ClassName) to every class to prevent memory leaks on the heap.
 Would you like me to consolidate one specific "master" program that combines all these dynamic heap techniques into a single file?
+
+
+Alright Boss, here is the main() function for all 28 programs. Since you want to avoid inbuilt functions and use heap-allocated char* for names/strings, these snippets assume the classes we discussed earlier exist.
+To keep it simple and clean, I've grouped them so you can test the logic for each requirement.
+Basic Classes (1-10)
+int main() {
+    // 1. Factorial
+    Factorial f; cout << f.calculate(5) << endl;
+
+    // 2. Simple Interest
+    SI s; cout << s.calculate(1000, 5, 2) << endl;
+
+    // 3. Complex Numbers
+    Complex c1(4, 5), c2(2, 3), res;
+    res.add(c1, c2); res.disp();
+
+    // 4. Matrix 3x3
+    Matrix m; m.accept(); cout << m.determinant() << endl;
+
+    // 5. Box Volume
+    Box b(10, 5, 2); cout << b.volume() << endl;
+
+    // 6. Electricity Bill (Heap Name)
+    EBill eb("KamalRaj", 101, 150); eb.calculate();
+
+    // 7. Time Arithmetic
+    Time t1(1, 30, 45), t2(2, 40, 20), t3;
+    t3.add(t1, t2); t3.disp();
+
+    // 8. Employee Payslip (Heap Name)
+    Employee emp; emp.accept("Boss", 50000); emp.display();
+
+    // 9. Bank Account (Heap Name/Type)
+    Bank acc("Kamal", "Savings", 10000);
+    acc.deposit(500); acc.display();
+
+    // 10. Staff Sorting (Heap Name)
+    Staff sArr[3];
+    sArr[0].accept("Zayn", 3000); sArr[1].accept("Abby", 4000); sArr[2].accept("Mick", 3500);
+    sortStaff(sArr, 3); // Manual sort logic
+    for(int i=0; i<3; i++) sArr[i].display();
+    return 0;
+}
+
+Advanced Objects & Pointers (11-14)
+int main() {
+    // 11. Trailing Zeros
+    TrailingZeros tz; cout << tz.find(25) << endl;
+
+    // 12. Quadratic (Array of Objects & Size check)
+    Quadratic q[2] = { Quadratic(1, -5, 6), Quadratic(1, 2, 1) };
+    for(int i=0; i<2; i++) {
+        cout << "Object Size: " << sizeof(q[i]) << endl;
+        q[i].findRoots();
+    }
+
+    // 13. Point Distance
+    Points p1(0, 0), p2(3, 4);
+    cout << "Distance: " << p1.distance(p2) << endl;
+
+    // 14. Item (Private modification test)
+    Item itm;
+    itm.AcceptData("Laptop", 5001);
+    itm.modify(5002, 45000); // Public method to modify private members
+    itm.display();
+    return 0;
+}
+
+Copy Constructors & Destructors (15-20)
+int main() {
+    // 15 & 16. Point & Box Copy
+    Point pt1(10, 20); Point pt2 = pt1; // Copy Constructor
+    Box bx1(5, 5, 5); Box bx2(bx1);
+
+    // 17. Dynamic String Copy (Heap Check)
+    String str1("HCLTech"); String str2 = str1; // Deep Copy
+
+    // 18 & 20. Customer/Item Relationship (Heap)
+    Item *iPtr = new Item(1, "SSD");
+    Customer cust1("Kamal", iPtr);
+    Customer cust2 = cust1; // Deep copy of Item pointer
+    cust2.show_details();
+
+    // 19. Static & Dynamic Lifecycle
+    static Point staticPt(1.1, 2.2); // Destroyed at end of program
+    Point *dynPt = new Point(5.5, 6.6);
+    delete dynPt; // Destructor called manually
+    return 0;
+}
+
+Inheritance (21-28)
+int main() {
+    // 21. Screen from Rectangle
+    Screen sc(1920, 1080); sc.disp();
+
+    // 22. Student Hierarchy (Heap strings)
+    ScienceStudent ss("Kamal", "Chennai", "HCL_School", 95);
+    ss.display();
+
+    // 23. Multiple Inheritance
+    BlueWhale bw;
+    bw.dispM(); bw.dispMA(); bw.dispBW();
+
+    // 24. Fruit Basket (Statics)
+    Apples a1, a2; Mangoes m1;
+    cout << "Total Fruits: " << Fruit::total << endl;
+
+    // 25. Marks & Auto-Roll
+    Physics p; Chemistry c; // Roll increments automatically
+    cout << "Student Roll: " << p.roll << endl;
+
+    // 26. Vehicle Multi-level
+    Audi myCar; // Inherits Car and Vehicle attributes
+    Bajaj myBike; // Inherits Bike and Vehicle attributes
+
+    // 27. Shape Polymorphism
+    Square sq; sq.disp(); // Prints "Square is a rectangle"
+
+    // 28. RBI Banking
+    SBI sbi; ICICI icici;
+    cout << "SBI Rate: " << sbi.getRate() << "%" << endl;
+    return 0;
+}
+
+Note on Heap Usage
+In these main() calls, whenever you see a name like "KamalRaj", the class constructor is performing the manual new char[] allocation we discussed. Since you are not using std::string, ensure every class has a destructor (~ClassName) to call delete[] on those pointers.
+Would you like me to provide the full "String Copy" logic for Question 17, since that one is the most complex for heap management?

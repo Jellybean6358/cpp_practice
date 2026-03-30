@@ -232,3 +232,76 @@ int main() {
 Note on Heap Usage
 In these main() calls, whenever you see a name like "KamalRaj", the class constructor is performing the manual new char[] allocation we discussed. Since you are not using std::string, ensure every class has a destructor (~ClassName) to call delete[] on those pointers.
 Would you like me to provide the full "String Copy" logic for Question 17, since that one is the most complex for heap management?
+
+
+#include <iostream>
+using namespace std;
+
+class Item {
+public:
+    int ItemNo;
+    char* ItemName;
+
+    Item() : ItemNo(0), ItemName(NULL) {}
+    Item(int no, const char* name) {
+        ItemNo = no;
+        int len = 0; while (name[len]) len++;
+        ItemName = new char[len + 1];
+        for (int i = 0; i <= len; i++) ItemName[i] = name[i];
+    }
+    void ShowDetails() {
+        if (ItemName) cout << "Item [" << ItemNo << "]: " << ItemName << endl;
+    }
+};
+
+class Customer {
+    int CustomerId;
+    char* CustomerName;
+    char* Address;
+    Item* ItemsInterested;
+    int TotalItems;
+
+public:
+    Customer() : CustomerName(NULL), Address(NULL), ItemsInterested(NULL) {}
+
+    Customer(int id, const char* name, const char* addr, Item* item, int total) {
+        CustomerId = id;
+        TotalItems = total;
+        // Manual copy for Name
+        int l1 = 0; while (name[l1]) l1++;
+        CustomerName = new char[l1 + 1];
+        for (int i = 0; i <= l1; i++) CustomerName[i] = name[i];
+        // Manual copy for Address
+        int l2 = 0; while (addr[l2]) l2++;
+        Address = new char[l2 + 1];
+        for (int i = 0; i <= l2; i++) Address[i] = addr[i];
+        // Pointer assignment
+        ItemsInterested = item; 
+    }
+
+    // Copy Constructor (Deep Copy)
+    Customer(const Customer &obj) {
+        CustomerId = obj.CustomerId;
+        TotalItems = obj.TotalItems;
+        // Deep copy strings and Item object
+        int l1 = 0; while (obj.CustomerName[l1]) l1++;
+        CustomerName = new char[l1 + 1];
+        for (int i = 0; i <= l1; i++) CustomerName[i] = obj.CustomerName[i];
+
+        ItemsInterested = new Item(obj.ItemsInterested->ItemNo, obj.ItemsInterested->ItemName);
+    }
+
+    void show_details() {
+        cout << "ID: " << CustomerId << " Name: " << CustomerName << endl;
+        if (ItemsInterested) ItemsInterested->ShowDetails();
+    }
+};
+
+int main() {
+    Item* itm = new Item(501, "Graphics Card");
+    Customer c1(1, "Kamal", "Chennai", itm, 1);
+    Customer c2 = c1; // Triggers Copy Constructor
+    c2.show_details();
+    return 0;
+}
+

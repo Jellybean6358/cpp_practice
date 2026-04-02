@@ -601,3 +601,22 @@ class SBI : public RBI { public: float getRate() { return 5.0; } };
 class ICICI : public RBI { public: float getRate() { return 6.0; } };
 
 Would you like me to explain the logic behind any specific program or help with a different C++ concept?
+
+Write a program to find the transpose of a given matrix.
+Write a program to add corresponding elements of two 1D arrays and store them in a third array.
+Write a program to merge two 1D arrays into a single array.
+Write a program to compare two 1D arrays and check whether they are equal.
+Write a program to find common elements between two 1D arrays.
+Write a program to copy elements from one array to another array.
+   7.Write a program to add two matrices using two‑dimensional arrays and display the resultant matrix.
+
+Combination of 1D and 2D Array – Programs
+Write a program to read a 2D array and store the sum of each row in a 1D array. Display both the matrix and the row‑sum array.
+Write a program to read a matrix and store the sum of each column in a separate 1D array.
+Write a program to read marks of students in different subjects using a 2D array and calculate total marks of each student using a 1D array.
+Write a program to read a 2D array and find the largest element of each row, storing the results in a 1D array.
+Write a program to read sales data of items for different days using a 2D array and calculate the total sales of each item using a 1D array.
+Write a program to read a matrix and count the number of even elements in each row using a 1D array.
+Write a program to read student marks in multiple subjects using a 2D array and compute average marks of each student using a 1D array.
+Write a program to read temperature values of different cities for several days using a 2D array and find the maximum temperature of each city using a 1D array.
+Write a program to read a matrix and store the sum of diagonal elements in a 1D array.
